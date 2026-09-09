@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prashant Joshi | Senior Software Engineer</title>
     
-    <!-- Minimal PJ Favicon (Generated via inline SVG - No image upload needed!) -->
+    <!-- Minimal PJ Favicon (Generated via inline SVG) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23111827'/><text x='50%' y='55%' font-family='sans-serif' font-weight='800' font-size='50' fill='%23818cf8' dominant-baseline='middle' text-anchor='middle'>PJ</text></svg>" />
 
     <!-- Tailwind CSS via CDN for zero-build styling -->
@@ -25,32 +25,23 @@
         ::selection { background: #6366f1; color: white; }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-300 antialiased leading-relaxed" id="home">
+<body class="bg-gray-950 text-gray-300 antialiased leading-relaxed">
     
-    <!-- Navbar Section (As seen in your mockup) -->
-    <nav class="max-w-4xl mx-auto px-6 py-8 flex justify-between items-center border-b border-gray-900/50">
-        <div class="flex items-center gap-4">
-            <!-- Minimal PJ Logo -->
-            <div class="w-10 h-10 flex items-center justify-center border-[1.5px] border-indigo-500/80 rounded-md bg-gray-900 text-white font-extrabold text-lg tracking-tighter shadow-[0_0_15px_rgba(99,102,241,0.15)]">
-                P<span class="text-indigo-400">J</span>
-            </div>
-            <span class="text-gray-100 font-medium tracking-wide hidden sm:block">Prashant Joshi</span>
-        </div>
-        
-        <!-- Navigation Links -->
-        <div class="hidden md:flex gap-8 text-xs text-gray-500 font-semibold tracking-[0.2em]">
-            <a href="#home" class="hover:text-indigo-400 transition-colors">HOME</a>
-            <a href="#projects" class="hover:text-indigo-400 transition-colors">PROJECTS</a>
-            <a href="#contact" class="hover:text-indigo-400 transition-colors">CONTACT</a>
-        </div>
-    </nav>
-
     <!-- Main Content Container -->
-    <div class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-6 py-16 md:py-32">
         
         <!-- Header Section -->
         <header class="mb-24">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-4">Prashant Joshi.</h1>
+            <div class="flex flex-col md:flex-row md:items-center gap-6 mb-6">
+                <!-- Minimal PJ Logo -->
+                <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center border-[2px] border-indigo-500/80 rounded-xl bg-gray-900 text-white font-extrabold text-3xl md:text-4xl tracking-tighter shadow-[0_0_20px_rgba(99,102,241,0.15)] flex-shrink-0">
+                    P<span class="text-indigo-400">J</span>
+                </div>
+                
+                <!-- Name -->
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight">Prashant Joshi.</h1>
+            </div>
+
             <p class="text-xl md:text-2xl text-indigo-400 font-light mb-8">Senior Software Engineer & Backend Architect</p>
             <p class="max-w-2xl text-lg text-gray-400 leading-relaxed">
                 Architecting highly scalable enterprise solutions with over 5 years of experience in high-throughput data environments. Specializing in asynchronous APIs, microservices, and complex database migrations.
@@ -76,7 +67,7 @@
         </section>
 
         <!-- Experience / Projects Section -->
-        <section id="projects" class="mb-24 pt-12">
+        <section class="mb-24 pt-12">
             <h2 class="text-sm font-semibold text-gray-500 mb-8 uppercase tracking-widest">Selected Engineering Work</h2>
             <div class="space-y-12">
                 
