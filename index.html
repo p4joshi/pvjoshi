@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prashant Joshi | Senior Software Engineer</title>
+    <title>Prashant Joshi | Senior Software Engineer (Python, Django, FastAPI, Odoo)</title>
+    <meta name="description" content="Prashant Joshi, Senior Software Engineer in Rajkot, India. Python backend developer working with Django, FastAPI, Odoo and PostgreSQL.">
     
     <!-- Minimal PJ Favicon (Generated via inline SVG) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23111827'/><text x='50%' y='55%' font-family='sans-serif' font-weight='800' font-size='50' fill='%23818cf8' dominant-baseline='middle' text-anchor='middle'>PJ</text></svg>" />
@@ -42,9 +43,9 @@
                 <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight">Prashant Joshi.</h1>
             </div>
 
-            <p class="text-xl md:text-2xl text-indigo-400 font-light mb-8">Senior Software Engineer & Backend Architect</p>
+            <p class="text-xl md:text-2xl text-indigo-400 font-light mb-8">Senior Software Engineer</p>
             <p class="max-w-2xl text-lg text-gray-400 leading-relaxed">
-                Architecting highly scalable enterprise solutions with over 5 years of experience in high-throughput data environments. Specializing in asynchronous APIs, microservices, and complex database migrations.
+                Python backend developer with over five years of experience, mostly building Odoo ERP systems and integrations for enterprise clients. I work with Django, FastAPI and PostgreSQL, and I care about how an API behaves when many users hit it at once.
             </p>
             <div class="mt-10 flex flex-wrap gap-4">
                 <a href="#contact" class="px-6 py-3 bg-white text-gray-950 font-semibold rounded-lg hover:bg-gray-200 transition-colors shadow-lg">Get in touch</a>
@@ -54,45 +55,61 @@
 
         <!-- Tech Stack Section -->
         <section class="mb-24">
-            <h2 class="text-sm font-semibold text-gray-500 mb-6 uppercase tracking-widest">Technical Arsenal</h2>
+            <h2 class="text-sm font-semibold text-gray-500 mb-6 uppercase tracking-widest">Skills</h2>
             <div class="flex flex-wrap gap-3">
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Python</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Django</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Django REST Framework</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">FastAPI</span>
-                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Odoo (v9-v17)</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Celery</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Odoo (v9, v15 to v19)</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">PostgreSQL</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Redis</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Docker</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">REST APIs</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">pytest</span>
+            </div>
+            <h3 class="text-xs font-semibold text-gray-600 mt-8 mb-4 uppercase tracking-widest">AI-assisted development</h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Claude</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">GitHub Copilot</span>
             </div>
         </section>
 
         <!-- Experience / Projects Section -->
         <section class="mb-24 pt-12">
-            <h2 class="text-sm font-semibold text-gray-500 mb-8 uppercase tracking-widest">Selected Engineering Work</h2>
+            <h2 class="text-sm font-semibold text-gray-500 mb-8 uppercase tracking-widest">Projects</h2>
             <div class="space-y-12">
                 
                 <!-- Project 1 -->
                 <div class="group relative border-l-2 border-gray-800 pl-6 hover:border-indigo-500 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-1">Enterprise Telecom Network Platform</h3>
-                    <p class="text-indigo-400 text-sm mb-4 font-mono">FastAPI • Python • PostgreSQL</p>
-                    <p class="text-gray-400">Architected and developed the high-performance backend and asynchronous API layers for a next-generation telecom platform showcased at the Mobile World Congress (MWC) 2026. Directed the integration of microservices tailored for a global Fortune 500 mobile networking corporation.</p>
+                    <h3 class="text-xl font-bold text-white mb-1">Flash Sale and Seat Reservation Engine (personal project)</h3>
+                    <p class="text-indigo-400 text-sm mb-4 font-mono">Django • DRF • PostgreSQL • Redis • Celery • Docker</p>
+                    <p class="text-gray-400">A backend service where many users compete for limited stock. A successful hold reserves stock for 10 minutes, and a signed payment webhook turns it into an order. I built four ways of reserving stock and load-tested each one with Locust. With 2 units in stock, the unguarded version created 48 holds; the other three created exactly 2. It also covers idempotent checkout and webhooks, Celery-based hold expiry, and 116 automated tests including 300-thread concurrency tests. Built in PyCharm with Claude as a pair-programming assistant.</p>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="group relative border-l-2 border-gray-800 pl-6 hover:border-indigo-500 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-1">End-to-End Core ERP Implementation</h3>
-                    <p class="text-indigo-400 text-sm mb-4 font-mono">Odoo • Python • Qweb</p>
-                    <p class="text-gray-400">Engineered custom enterprise resource planning modules focusing on Field Service, Accounts, and Inventory workflows. Applied advanced debugging and strict coding standards to resolve complex technical bottlenecks.</p>
+                    <h3 class="text-xl font-bold text-white mb-1">Enterprise Telecom Network Platform</h3>
+                    <p class="text-indigo-400 text-sm mb-4 font-mono">FastAPI • Celery • Odoo • Python • PostgreSQL</p>
+                    <p class="text-gray-400">Built the asynchronous FastAPI backend for a telecom network platform demonstrated at Mobile World Congress 2026, for a Fortune 500 mobile networking client. The microservices validate uploaded images (metadata, altitude, coordinates and other parameters), with Celery managing the validation jobs. A single request could contain 500 to 1,000 images (2 to 3 GB). Led the team that integrated them with Odoo ERP components, and documented the APIs with Swagger/OpenAPI.</p>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="group relative border-l-2 border-gray-800 pl-6 hover:border-indigo-500 transition-colors">
-                    <h3 class="text-xl font-bold text-white mb-1">Legacy Database Migration Engine</h3>
-                    <p class="text-indigo-400 text-sm mb-4 font-mono">Python • MS SQL • PostgreSQL</p>
-                    <p class="text-gray-400">Successfully executed zero-loss legacy data migrations from MS SQL desktop environments into robust PostgreSQL web architectures. Developed custom engine components for generating complex corporate reporting.</p>
+                    <h3 class="text-xl font-bold text-white mb-1">Odoo ERP Implementation</h3>
+                    <p class="text-indigo-400 text-sm mb-4 font-mono">Odoo • Python • QWeb • PostgreSQL</p>
+                    <p class="text-gray-400">Customised Odoo modules across Field Service, Accounting, Sales and Inventory, mainly fixing complex bugs and extending the Field Service module while following Odoo coding standards.</p>
                 </div>
 
-            </div>
+                <!-- Project 4 -->
+                <div class="group relative border-l-2 border-gray-800 pl-6 hover:border-indigo-500 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-1">Legacy Database Migration</h3>
+                    <p class="text-indigo-400 text-sm mb-4 font-mono">Python • MS SQL • Odoo • PostgreSQL</p>
+                    <p class="text-gray-400">Migrated data from a legacy desktop application on MS SQL Server into Odoo (PostgreSQL), and built a custom engine that produces business reports in PDF and XLSX.</p>
+                </div>
+
+                </div>
         </section>
 
         <!-- Footer / Contact Section -->
