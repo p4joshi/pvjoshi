@@ -45,7 +45,7 @@
 
             <p class="text-xl md:text-2xl text-indigo-400 font-light mb-8">Senior Software Engineer</p>
             <p class="max-w-2xl text-lg text-gray-400 leading-relaxed">
-                Python backend developer with over five years of experience, mostly building Odoo ERP systems and integrations for enterprise clients. I work with frameworks like Odoo, Django, and FastAPI.
+                Python backend developer with over five years of experience, mostly building Odoo ERP systems and integrations for enterprise clients. I work with Django, FastAPI and PostgreSQL, and I care about how an API behaves when many users hit it at once.
             </p>
             <div class="mt-10 flex flex-wrap gap-4">
                 <a href="#contact" class="px-6 py-3 bg-white text-gray-950 font-semibold rounded-lg hover:bg-gray-200 transition-colors shadow-lg">Get in touch</a>
@@ -62,6 +62,7 @@
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Django REST Framework</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">FastAPI</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Celery</span>
+                <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">OCA queue_job</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Odoo (v9, v15 to v19)</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">PostgreSQL</span>
                 <span class="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-200 rounded-full text-sm shadow-sm">Redis</span>
@@ -93,6 +94,13 @@
                     <h3 class="text-xl font-bold text-white mb-1">Enterprise Telecom Network Platform</h3>
                     <p class="text-indigo-400 text-sm mb-4 font-mono">FastAPI • Celery • Odoo • Python • PostgreSQL</p>
                     <p class="text-gray-400">Built the asynchronous FastAPI backend for a telecom network platform demonstrated at Mobile World Congress 2026, for a Fortune 500 mobile networking client. The microservices validate uploaded images (metadata, altitude, coordinates and other parameters), with Celery managing the validation jobs. A single request could contain 500 to 1,000 images (2 to 3 GB). Led the team that integrated them with Odoo ERP components, and documented the APIs with Swagger/OpenAPI.</p>
+                </div>
+
+                <!-- Project: production support -->
+                <div class="group relative border-l-2 border-gray-800 pl-6 hover:border-indigo-500 transition-colors">
+                    <h3 class="text-xl font-bold text-white mb-1">Odoo Production Support (Food Retail Client)</h3>
+                    <p class="text-indigo-400 text-sm mb-4 font-mono">Odoo 18 • Python • PostgreSQL • OCA queue_job</p>
+                    <p class="text-gray-400">Mostly debugging and fixing production issues. Reworked a goods receipt action that did validation, quantity recording and document generation inside one HTTP request and one long database transaction, so any failure rolled everything back; the work now runs as OCA queue_job background jobs. Also used AI assistance with Odoo shell scripts and database queries to find gaps in accounting data, mainly receivables and reconciliations.</p>
                 </div>
 
                 <!-- Project 3 -->
